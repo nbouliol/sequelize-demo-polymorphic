@@ -1,0 +1,32 @@
+{
+  "name": "polypocket",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "start:watch": "nodemon ./index.ts"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./forestadmin-schema.json",
+      "./typings.ts"
+    ]
+  },
+  "dependencies": {
+    "@forestadmin/agent": "^1.0.0",
+    "@forestadmin/datasource-sequelize": "^1.5.14",
+    "@forestadmin/datasource-sql": "^1.0.0",
+    "dotenv": "^16.0.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^3.0.3",
+    "sequelize-cli": "^6.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
