@@ -1,9 +1,10 @@
 {
     "development": {
-        "username": "postgres",
-        "password": "postgres",
-        "host": "127.0.0.1",
+        "username": "forest",
+        "password": "secret",
+        "host": "localhost",
+        "port": 5435,
         "dialect": "postgres",
-        "database": "poly"
+        "database": "polymorphism"
     }
 }

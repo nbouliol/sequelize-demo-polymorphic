@@ -26,7 +26,34 @@ module.exports = {
         Array.from({ length: 10 }).map((_, i) => ({
           title: faker.lorem.sentence(3),
           commentableId: i + 1,
-          commentableType: i % 2 === 0 ? "image" : "video",
+          commentableType: "image",
+        })),
+        { transaction }
+      );
+      await queryInterface.bulkInsert(
+        "comments",
+        Array.from({ length: 10 }).map((_, i) => ({
+          title: faker.lorem.sentence(3),
+          commentableId: i + 1,
+          commentableType: "video",
+        })),
+        { transaction }
+      );
+      await queryInterface.bulkInsert(
+        "comments",
+        Array.from({ length: 10 }).map((_, i) => ({
+          title: faker.lorem.sentence(3),
+          commentableId: i + 1,
+          commentableType: "image",
+        })),
+        { transaction }
+      );
+      await queryInterface.bulkInsert(
+        "comments",
+        Array.from({ length: 10 }).map((_, i) => ({
+          title: faker.lorem.sentence(3),
+          commentableId: i + 1,
+          commentableType: "video",
         })),
         { transaction }
       );

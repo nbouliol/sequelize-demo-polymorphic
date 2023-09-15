@@ -8,12 +8,6 @@ export const sequelize = new Sequelize(process.env.DATABASE_URL);
 class Image extends Model {}
 Image.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-    },
     title: DataTypes.STRING,
     url: DataTypes.STRING,
   },
@@ -23,12 +17,6 @@ Image.init(
 class Video extends Model {}
 Video.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-    },
     title: DataTypes.STRING,
     text: DataTypes.STRING,
   },
@@ -46,12 +34,6 @@ class Comment extends Model {
 }
 Comment.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-    },
     commentableId: DataTypes.INTEGER,
     commentableType: DataTypes.STRING,
   },

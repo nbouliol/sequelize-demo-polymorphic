@@ -1,4 +1,3 @@
-import type { SslMode } from "@forestadmin/datasource-sql";
 import type { Schema } from "./typings";
 
 import "dotenv/config";
